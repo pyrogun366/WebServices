@@ -7,6 +7,7 @@ namespace WebServices
 {
     public class TableOfStatements
     {
+
         public int AccountNumber { get; set; }
         public DateTime ApplicationDate { get; set; }
         public string TypeOfStatement { get; set; }

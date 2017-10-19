@@ -1,0 +1,17 @@
+D:\College\C#\WebServices\WebServices\bin\Debug\netcoreapp2.0\WebServices.deps.json
+D:\College\C#\WebServices\WebServices\bin\Debug\netcoreapp2.0\WebServices.runtimeconfig.json
+D:\College\C#\WebServices\WebServices\bin\Debug\netcoreapp2.0\WebServices.runtimeconfig.dev.json
+D:\College\C#\WebServices\WebServices\bin\Debug\netcoreapp2.0\WebServices.dll
+D:\College\C#\WebServices\WebServices\bin\Debug\netcoreapp2.0\WebServices.pdb
+D:\College\C#\WebServices\WebServices\bin\Debug\netcoreapp2.0\EntityFramework.dll
+D:\College\C#\WebServices\WebServices\bin\Debug\netcoreapp2.0\EntityFramework.SqlServer.dll
+D:\College\C#\WebServices\WebServices\bin\Debug\netcoreapp2.0\EntityFramework.xml
+D:\College\C#\WebServices\WebServices\bin\Debug\netcoreapp2.0\EntityFramework.SqlServer.xml
+D:\College\C#\WebServices\WebServices\bin\Debug\netcoreapp2.0\ru\EntityFramework.resources.dll
+D:\College\C#\WebServices\WebServices\bin\Debug\netcoreapp2.0\ru\EntityFramework.SqlServer.resources.dll
+D:\College\C#\WebServices\WebServices\obj\Debug\netcoreapp2.0\WebServices.csprojResolveAssemblyReference.cache
+D:\College\C#\WebServices\WebServices\obj\Debug\netcoreapp2.0\WebServices.csproj.CoreCompileInputs.cache
+D:\College\C#\WebServices\WebServices\obj\Debug\netcoreapp2.0\WebServices.AssemblyInfoInputs.cache
+D:\College\C#\WebServices\WebServices\obj\Debug\netcoreapp2.0\WebServices.AssemblyInfo.cs
+D:\College\C#\WebServices\WebServices\obj\Debug\netcoreapp2.0\WebServices.dll
+D:\College\C#\WebServices\WebServices\obj\Debug\netcoreapp2.0\WebServices.pdb

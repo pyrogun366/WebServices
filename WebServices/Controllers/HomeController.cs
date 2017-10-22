@@ -16,19 +16,10 @@ namespace WebServices.Controllers
         //UserTableContext dbUser = new UserTableContext();
         //TableOfStatementsContext dbStatement = new TableOfStatementsContext();
 
+        public static string Login { get; set; }
+        public static string Password { get; set; }
         public static string FirstName { get; set; }
-        public static string LastName
-        {
-            set
-            {
-                value = WebServices.Models.Register.LastName;
-            }
-            get
-            {
-                return Models.Register.LastName;
-            }
-            
-        }
+        public static string LastName { get; set; }
         public static int AcountNumber { get; set; }
         public static string Email { get; set; }
         public static DateTime DOB { get; set; }
@@ -67,8 +58,9 @@ namespace WebServices.Controllers
         //метод для создания новоого юзера.то есть должно быть добавелние в бд
         public string NewUser()
         {
-            string a = LastName.ToString();
-            return "Пусть хоть что-то возвращает";
+            
+            string a = ViewBag.LastName;
+            return "LastName="+a;
         }
     }
 }

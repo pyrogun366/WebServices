@@ -7,13 +7,13 @@ namespace WebServices.Models
 {
     public class Register
     {
-        public static string FirstName { get; set; }
-        public static string LastName { get; set; }
-        public static int AcountNumber { get; set; }
-        public static string Email { get; set; }
-        public static DateTime DOB { get; set; }
-        public static string GroupName { get; set; }
-
-        
+        public  string FirstName { get; set; }
+        public  string LastName { get; set; }
+        public  int AcountNumber { get; set; }
+        public  string Email { get; set; }
+        public  DateTime DOB { get; set; }
+        public  string GroupName { get; set; }
+        public  string Password { get; set; }
+        public  string Login { get; set; }
     }
 }

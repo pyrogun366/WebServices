@@ -1,11 +1,20 @@
-﻿
+﻿@model WebServices.Models.Register;
+    <!--в данном случае выражение 2model объявляет тип объета модели, который будет передаваться 
+        ПРЕДСТАВЛЕНИЮ ИЗ МЕТОДА действий. это позволяет ссылться на методы,
+        поля и свойтсва объекта модели предсталвения посрдеством Райзора.-->
+    <!--но стоит попытаться что ли через аксессор доступа воткнуть туда значение. хз. может прокатит. пока что читаю дальше-->
 @{
-    //ViewData["Title"] = "Register";
-    
-    
+    ViewData["Title"] = "Register";
+    ViewData["LastName"] = null; 
+    ViewBag.FirstName = null;
+    ViewBag.LastName = null;
+    ViewBag.Password = null;
+    ViewBag.AccountNumber = null;
+    ViewBag.Email = null;
+    ViewBag.GroupName = null;
+    ViewBag.DOB = null;
+
 }
-@using WebServices.Models;
-@using WebServices.Controllers;
 <!DOCTYPE>
 <html>
 <head>
@@ -17,12 +26,18 @@
     <div id="shapka"></div>
     <div id="content">
         <form class="register">
-            <input type="text" class="text" asp-for="@Register.AcountNumber" placeholder="Номер зачетки">
-            <input type="text" class="text" asp-for="@Register.LastName" placeholder="Фамилия">
-            <input type="text" class="text" asp-for="@HomeController.FirstName" placeholder="Имя">
-            <input type="text" class="text" asp-for="@HomeController.Email" placeholder="Email">
-            <input type="text" class="text" asp-for="@HomeController.GroupName" placeholder="Группа '4АПОСШ'">
-            <input type="date" asp-for="@HomeController.DOB" value="2000-01-01">
+            <asp:TextBox id="LastName" class="text" ></asp:TextBox>
+
+
+
+
+            <input type="text" class="text" asp-for="@Model.AcountNumber" placeholder="Номер зачетки" autocomplete="off">
+            <input type="text" class="text" asp-for="@Model.LastName" placeholder="Фамилия" autocomplete="off" id="lastName" >
+            <input type="text" class="text" asp-for="@Model.FirstName" placeholder="Имя" autocomplete="off">
+            <input type="text" class="text" asp-for="@Model.Email" placeholder="Email" autocomplete="off">
+            <input type="text" class="text" asp-for="@Model.GroupName" placeholder="Группа '4АПОСШ'" autocomplete="off">
+            <input type="date" asp-for="@Model.DOB" value="2000-01-01" autocomplete="off">
+            <input type="password" asp-for="@Model.Password" class="text" placeholder="Пароль" />
             <!--<a href="index.html" rel="vhod" class="rig biton">Вход</a>-->
             <a asp-controller="Home" asp-action="Index" class="biton">Вход</a>
             <!--<input type="submit" class="biton" value="Регистрация">-->

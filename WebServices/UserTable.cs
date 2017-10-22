@@ -16,5 +16,7 @@ namespace WebServices
         public string Email { get; set; }
         public DateTime DOB { get; set; }
         public string GroupName { get; set; }
+        public string Password { get; set; }
+        public static string Login { get; set; }
     }
 }

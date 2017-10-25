@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using WebServices.Models;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 
 namespace WebServices
@@ -23,23 +24,9 @@ namespace WebServices
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddMvc();
             string connection = Configuration.GetConnectionString("DefaultConnection");
-            //services.AddDbContext<TableOfStatementsContext>(options => options.UseSqlServer(connection));
-            //services.AddDbContext<UserTableContext>(options => options.UseSqlServer(connection));
-            //services.AddDbContext<Model>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<ModelContext>(options => options.UseSqlServer(connection));
             services.AddMvc();
-
-            services.AddDbContext<Model>(options => options.UseSqlServer(Configuration.GetConnectionString(name: "CustomConnection"))
-              .EnableSensitiveDataLogging());
-
-            using (var item = new Model())
-            {
-                UserTable user = new UserTable() { AcountNumber = 1, DOB = DateTime.Now, Email = "fgdfg",
-                    FirstName = "sfd", GroupName = "sdfg", LastName = "dfg", Password = "udfgdfg" };
-                item.UserTables.Add(user);
-                item.SaveChanges();
-            }
 
         }
 

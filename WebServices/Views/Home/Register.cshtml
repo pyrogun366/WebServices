@@ -5,16 +5,12 @@
     <!--но стоит попытаться что ли через аксессор доступа воткнуть туда значение. хз. может прокатит. пока что читаю дальше-->
 @{
     ViewData["Title"] = "Register";
-    ViewData["LastName"] = null; 
-    ViewBag.FirstName = null;
-    ViewBag.LastName = null;
-    ViewBag.Password = null;
-    ViewBag.AccountNumber = null;
-    ViewBag.Email = null;
-    ViewBag.GroupName = null;
-    ViewBag.DOB = null;
-    @Html.EditorFor(md => md.LastName);
-
+    
+}
+@using (Html.BeginForm())
+{
+    @Html.TextBox("lastName");
+    
 }
 <!DOCTYPE>
 <html>
@@ -33,7 +29,8 @@
 
 
             <input type="text" class="text" asp-for="@Model.AcountNumber" placeholder="Номер зачетки" autocomplete="off" name="accountNumber">
-            <input type="text" class="text" placeholder="Фамилия" autocomplete="off" name="LastName">
+            <input type="text" class="text" id="lastName" placeholder="Фамилия" autocomplete="off" name="lastName"/>
+            <input type="text" class="text" asp-
             <input type="text" class="text" asp-for="@Model.FirstName" placeholder="Имя" autocomplete="off" name="firstName">
             <input type="text" class="text" asp-for="@Model.Email" placeholder="Email" autocomplete="off" name="email">
             <input type="text" class="text" asp-for="@Model.GroupName" placeholder="Группа '4АПОСШ'" autocomplete="off" name="groupName">
@@ -41,8 +38,8 @@
             <input type="password" asp-for="@Model.Password" class="text" placeholder="Пароль" name="password"/>
             <!--<a href="index.html" rel="vhod" class="rig biton">Вход</a>-->
             <a asp-controller="Home" asp-action="Index" class="biton">Вход</a>
-            <!--<input type="submit" class="biton" value="Регистрация">-->
-            <a asp-controller="Home" asp-action="NewUser" class="biton">Регистрация</a>
+            <input type="submit" class="biton" value="Регистрация">
+            <!--<a asp-controller="Home" asp-action="OldUser" class="biton">Регистрация</a>-->
         </form>
     </div>
     <div id="podval"></div>

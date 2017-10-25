@@ -56,12 +56,19 @@ namespace WebServices.Controllers
         }
 
         //метод для создания новоого юзера.то есть должно быть добавелние в бд
-        public string NewUser(string md,string firstName, DateTime dob, string password, string accountNumber,string group,string email)
+        [HttpPost]
+        public IActionResult NewUser(string lastName, string firstName, DateTime dob, string password, string accountNumber,string group,string email)
+        {
+            if (lastName != null)
+                return View( "LastName=" + lastName);
+            else return View("null");
+        }
+
+        [HttpPost]
+        public IActionResult NewUser0(string lastName, string firstName, DateTime dob, string password, string accountNumber, string group, string email)
         {
 
-            if (md != null)
-                return "LastName=" + md;
-            else return "null";
+            return View(LastName);
         }
     }
 }

@@ -56,11 +56,12 @@ namespace WebServices.Controllers
         }
 
         //метод для создания новоого юзера.то есть должно быть добавелние в бд
-        public string NewUser()
+        public string NewUser(string md,string firstName, DateTime dob, string password, string accountNumber,string group,string email)
         {
-            
-            string a = ViewBag.LastName;
-            return "LastName="+a;
+
+            if (md != null)
+                return "LastName=" + md;
+            else return "null";
         }
     }
 }

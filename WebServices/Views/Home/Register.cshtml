@@ -13,6 +13,7 @@
     ViewBag.Email = null;
     ViewBag.GroupName = null;
     ViewBag.DOB = null;
+    @Html.EditorFor(md => md.LastName);
 
 }
 <!DOCTYPE>
@@ -31,13 +32,13 @@
 
 
 
-            <input type="text" class="text" asp-for="@Model.AcountNumber" placeholder="Номер зачетки" autocomplete="off">
-            <input type="text" class="text" asp-for="@Model.LastName" placeholder="Фамилия" autocomplete="off" id="lastName" >
-            <input type="text" class="text" asp-for="@Model.FirstName" placeholder="Имя" autocomplete="off">
-            <input type="text" class="text" asp-for="@Model.Email" placeholder="Email" autocomplete="off">
-            <input type="text" class="text" asp-for="@Model.GroupName" placeholder="Группа '4АПОСШ'" autocomplete="off">
-            <input type="date" asp-for="@Model.DOB" value="2000-01-01" autocomplete="off">
-            <input type="password" asp-for="@Model.Password" class="text" placeholder="Пароль" />
+            <input type="text" class="text" asp-for="@Model.AcountNumber" placeholder="Номер зачетки" autocomplete="off" name="accountNumber">
+            <input type="text" class="text" placeholder="Фамилия" autocomplete="off" name="LastName">
+            <input type="text" class="text" asp-for="@Model.FirstName" placeholder="Имя" autocomplete="off" name="firstName">
+            <input type="text" class="text" asp-for="@Model.Email" placeholder="Email" autocomplete="off" name="email">
+            <input type="text" class="text" asp-for="@Model.GroupName" placeholder="Группа '4АПОСШ'" autocomplete="off" name="groupName">
+            <input type="date" asp-for="@Model.DOB" value="2000-01-01" autocomplete="off" name="dob">
+            <input type="password" asp-for="@Model.Password" class="text" placeholder="Пароль" name="password"/>
             <!--<a href="index.html" rel="vhod" class="rig biton">Вход</a>-->
             <a asp-controller="Home" asp-action="Index" class="biton">Вход</a>
             <!--<input type="submit" class="biton" value="Регистрация">-->

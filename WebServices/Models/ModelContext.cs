@@ -8,11 +8,15 @@ namespace WebServices.Models
 {
     public class ModelContext:DbContext
     {
-        public DbSet<UserTable> TUsers { get; set; }
-        public DbSet<TableOfStatements> TState { get; set; }
+        public DbSet<UserTable> UserTable { get; set; }
+        public DbSet<TableOfStatements> TableOfStatements { get; set; }
 
         public ModelContext(DbContextOptions<ModelContext> options)
             :base(options)
+        {
+
+        }
+        public ModelContext():base()
         {
 
         }

@@ -8005,7 +8005,7 @@
       ]
     },
     "Newtonsoft.Json/10.0.3": {
-      "sha512": "wBM7i7i3U2WX0ecor4zdVGvgrwFUjuigBoHKiL+nH39fCOpCPjBY3RDqJM32edvdyTAVdjzlccHsg41+/+zpSA==",
+      "sha512": "hSXaFmh7hNCuEoC4XNY5DrRkLDzYHqPx/Ik23R4J86Z7PE/Y6YidhG602dFVdLBRSdG6xp9NabH3dXpcoxWvww==",
       "type": "package",
       "path": "newtonsoft.json/10.0.3",
       "files": [
@@ -13170,7 +13170,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lightning\\.nuget\\packages\\": {},
+    "C:\\Users\\sanch\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -13179,17 +13179,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\College\\C#\\WebServices\\WebServices\\WebServices.csproj",
+      "projectUniqueName": "C:\\Users\\sanch\\Source\\Repos\\WebServices\\WebServices\\WebServices.csproj",
       "projectName": "WebServices",
-      "projectPath": "D:\\College\\C#\\WebServices\\WebServices\\WebServices.csproj",
-      "packagesPath": "C:\\Users\\Lightning\\.nuget\\packages\\",
-      "outputPath": "D:\\College\\C#\\WebServices\\WebServices\\obj\\",
+      "projectPath": "C:\\Users\\sanch\\Source\\Repos\\WebServices\\WebServices\\WebServices.csproj",
+      "packagesPath": "C:\\Users\\sanch\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sanch\\Source\\Repos\\WebServices\\WebServices\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Lightning\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sanch\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

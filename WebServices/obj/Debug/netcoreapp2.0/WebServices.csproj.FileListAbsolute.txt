@@ -9,3 +9,14 @@ D:\College\C#\WebServices\WebServices\obj\Debug\netcoreapp2.0\WebServices.Assemb
 D:\College\C#\WebServices\WebServices\obj\Debug\netcoreapp2.0\WebServices.AssemblyInfo.cs
 D:\College\C#\WebServices\WebServices\obj\Debug\netcoreapp2.0\WebServices.dll
 D:\College\C#\WebServices\WebServices\obj\Debug\netcoreapp2.0\WebServices.pdb
+C:\Users\sanch\Source\Repos\WebServices\WebServices\bin\Debug\netcoreapp2.0\WebServices.deps.json
+C:\Users\sanch\Source\Repos\WebServices\WebServices\bin\Debug\netcoreapp2.0\WebServices.runtimeconfig.json
+C:\Users\sanch\Source\Repos\WebServices\WebServices\bin\Debug\netcoreapp2.0\WebServices.runtimeconfig.dev.json
+C:\Users\sanch\Source\Repos\WebServices\WebServices\bin\Debug\netcoreapp2.0\WebServices.dll
+C:\Users\sanch\Source\Repos\WebServices\WebServices\bin\Debug\netcoreapp2.0\WebServices.pdb
+C:\Users\sanch\Source\Repos\WebServices\WebServices\obj\Debug\netcoreapp2.0\WebServices.csprojResolveAssemblyReference.cache
+C:\Users\sanch\Source\Repos\WebServices\WebServices\obj\Debug\netcoreapp2.0\WebServices.csproj.CoreCompileInputs.cache
+C:\Users\sanch\Source\Repos\WebServices\WebServices\obj\Debug\netcoreapp2.0\WebServices.AssemblyInfoInputs.cache
+C:\Users\sanch\Source\Repos\WebServices\WebServices\obj\Debug\netcoreapp2.0\WebServices.AssemblyInfo.cs
+C:\Users\sanch\Source\Repos\WebServices\WebServices\obj\Debug\netcoreapp2.0\WebServices.dll
+C:\Users\sanch\Source\Repos\WebServices\WebServices\obj\Debug\netcoreapp2.0\WebServices.pdb

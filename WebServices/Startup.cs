@@ -26,10 +26,19 @@ namespace WebServices
         {
             string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<ModelContext>(options => options.UseSqlServer(connection));
+            services.AddScoped<ModelContext>();
             services.AddMvc();
+            var optionsBuilder = new DbContextOptionsBuilder<ModelContext>();
+            optionsBuilder.UseSqlServer(connection);
+            using (var item = new ModelContext(optionsBuilder.Options))
+            {
+                UserTable user = new UserTable() { FirstName = "wqe", AcountNumber = 4, DOB = DateTime.Now, Email = "wqq", GroupName = "qeqw", LastName = "eqwe", Password = "qweq" };
+                item.UserTable.Add(user);
+                item.SaveChanges();
 
+            }
         }
-
+        
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
